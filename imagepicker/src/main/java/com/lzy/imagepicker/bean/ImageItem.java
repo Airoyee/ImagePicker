@@ -25,7 +25,7 @@ public class ImageItem implements Serializable, Parcelable {
         if (o instanceof ImageItem) {
             ImageItem item = (ImageItem) o;
             if(uri!=null){
-                return this.uri==item.uri;
+                return this.uriequals(item.uri);
             }
             return super.equals(o);
         }
